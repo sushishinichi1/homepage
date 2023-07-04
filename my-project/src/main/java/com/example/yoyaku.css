@@ -1,0 +1,20 @@
+table {
+    border-collapse: collapse;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  
+  td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    cursor: pointer;
+  }.selected {
+    background-color: #ff0000;
+    color: #ffffff;
+  }
+  
+  
