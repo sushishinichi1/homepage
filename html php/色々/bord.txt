@@ -1,0 +1,9 @@
+<?php
+$name=$_POST["name"];
+$message=$_POST["message"];
+
+$fp = fopen("bord.txt","a");
+fwite($fp,$name . "t" . $message . "n");
+fclose($fp);
+
+?>  

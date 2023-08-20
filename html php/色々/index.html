@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        .done {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>Todo 1 <button>done</button></li>
+    <li>Todo 2 <button>done</button></li>
+    <li>Todo 3 <button>done</button></li>
+</ul>
+<script>
+    const buttonList = document.querySelectorAll('button');
+    buttonList.forEach((button) => {
+      button.addEventListener('click', () => {
+        const li = button.closest('li');
+        li.classList.add('done');
+      });
+    });
+
+    // こちらは最初の1個のもの
+    // const li = document.querySelector('li');
+    // button.addEventListener('click', () => {
+    //   li.classList.add('done');
+    // });
+</script>
+</body>
+</html>

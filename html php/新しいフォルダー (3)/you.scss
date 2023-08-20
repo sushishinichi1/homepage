@@ -1,0 +1,43 @@
+$container-width: 1140px;
+
+$sidebar-width-open: 250px;
+$sidebar-width-close: 50px;
+
+$main-margin: 10px;
+
+.sidebar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    &.m-open {
+        width: $sidebar-width-open;
+    }
+
+    &.m-close {
+        width: $sidebar-width-close;
+    }
+}
+
+.container {
+    &.m-open {
+        width: $container-width + 2*$main-margin;
+        margin: 0 auto;
+
+        @media (max-width: $container-width+2*$sidebar-width-open+2*$main-margin) {
+            width: 100%;
+            padding-left: $sidebar-width-open + $main-margin;
+        }
+    }
+
+    &.m-close {
+        width: $container-width + 2*$main-margin;
+        margin: 0 auto;
+
+        @media (max-width: $container-width+2*$sidebar-width-close+2*$main-margin) {
+            width: 100%;
+            padding-left: $sidebar-width-close + $main-margin;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+#splash{
+  position: fixed;/*全画面に固定*/
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  text-align: center;
+  color: #fff;
+}
+#splash_text{
+  position: absolute;
+  top: 50%;
+  left: 50%;/*中央*/
+  z-index: 999;
+  width: 100%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+}
+#container{
+  width: 100%;
+  height: 100vh;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+a{
+  color: #333;
+}
+a:hover{
+  text-decoration: none;
+}
+#footer li span img.profix{
+  float: left ;
+  width: 80px;
+  border-radius: 100%;
+  margin-right: 13px;
+}
+#footer{
+  font-family: arial;
+  font-size: 12px;
+  background-color: #000;
+  width: 100%;
+  position: absolute;
+  border-top:
+}
